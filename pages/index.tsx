@@ -1,10 +1,12 @@
 import Link from "next/link";
 import Layout from "../components/Layout";
 import "tailwindcss/tailwind.css";
+import Tech from "../components/Tech";
 
 const IndexPage = () => (
-  <Layout title="test">
-    <h1 className="container mx-auto">kumusan</h1>
+  <Layout title="KUMUSAN - BLOG">
+    ここになにか入れる
+    <Tech />
     <p>
       <Link href="/about">
         <a>About</a>
