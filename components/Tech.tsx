@@ -16,7 +16,7 @@ const Tech = () => {
     { name: "React", icon: faReact },
   ];
   return (
-    <div className="m-5">
+    <div className="m-5 dark:text-white">
       {techList.map((tech) => (
         <div className="space-y-4 text-3xl inline-block border-2 mr-1">
           <FontAwesomeIcon
