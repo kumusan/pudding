@@ -1,9 +1,13 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
+  IconDefinition,
   faVuejs,
   faReact,
-  IconDefinition,
+  faNpm,
+  faHtml5,
+  faCss3Alt,
+  faJsSquare,
 } from "@fortawesome/free-brands-svg-icons";
+import Card from "./Card";
 
 interface TechList {
   name: string;
@@ -12,22 +16,21 @@ interface TechList {
 
 const Tech = () => {
   const techList: TechList[] = [
-    { name: "Vue", icon: faVuejs },
-    { name: "React", icon: faReact },
+    { name: "vue", icon: faVuejs },
+    { name: "react", icon: faReact },
+    { name: "npm", icon: faNpm },
+    { name: "html", icon: faHtml5 },
+    { name: "css", icon: faCss3Alt },
+    { name: "js", icon: faJsSquare },
   ];
   return (
-    <div className="m-5 dark:text-white">
+    <div className="m-5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {techList.map((tech) => (
-        <div className="space-y-4 text-3xl inline-block border-2 mr-1">
-          <FontAwesomeIcon
-            icon={tech.icon}
-            className="text-9xl block border-b"
-          />
-          <p className="block text-center m-0">{tech.name}</p>
-        </div>
+        <Card icon={tech.icon} detect={"icon"} />
       ))}
+      <Card detect={"img"} />
     </div>
   );
 };
-
+// grid grid-cols-1   gap-4
 export default Tech;

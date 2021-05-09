@@ -5,7 +5,14 @@ import Tech from "../components/Tech";
 
 const IndexPage = () => (
   <Layout title="KUMUSAN - BLOG">
-    ここになにか入れる
+    <div className="flex flex-row-reverse m-12">
+      <p className="text-6xl">Learn</p>
+    </div>
+    <Tech />
+    <div className="flex flex-row-reverse m-12">
+      <p className="text-6xl">Favorite</p>
+    </div>
+    {/* あとで */}
     <Tech />
     <p>
       <Link href="/about">
