@@ -15,11 +15,11 @@ const Layout = ({ children, title }: Props) => (
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
     </Head>
     <header className="flex flex-col m-10 dark:text-white">
-      <h1 className="text-5xl">kumusan</h1>
-      <p className="text-1xl pl-6">Front-End Engineer</p>
+      <h1 className="text-7xl">kumusan</h1>
+      <p className="text-1xl pl-10">Front-End Engineer</p>
       <DarkModeToggle />
     </header>
-    <hr />
+    <hr className="text-black" />
     {children}
     <footer className="dark:text-white">
       <span>I'm here to stay (Footer)</span>

@@ -15,11 +15,11 @@ const Toggle = () => {
     ) {
       setDarkMode(true);
       document.querySelector("html")?.classList.add("dark");
-      document.querySelector("body")!.style.backgroundColor = "#1F2937";
+      document.querySelector("body")!.style.backgroundColor = "#374151";
     } else {
       setDarkMode(false);
       document.querySelector("html")?.classList.remove("dark");
-      document.querySelector("body")!.style.backgroundColor = "#f0f8ff";
+      document.querySelector("body")!.style.backgroundColor = "#FFF0E8";
     }
   }, [darkMode]);
 
