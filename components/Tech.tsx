@@ -9,10 +9,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import Card from "./Card";
 
-interface TechList {
+type TechList = {
   name: string;
   icon: IconDefinition;
-}
+};
 
 const Tech = () => {
   const techList: TechList[] = [
@@ -26,9 +26,8 @@ const Tech = () => {
   return (
     <div className="m-5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {techList.map((tech) => (
-        <Card icon={tech.icon} detect={"icon"} />
+        <Card name={tech.name} icon={tech.icon} detect={"icon"} />
       ))}
-      <Card detect={"img"} />
     </div>
   );
 };
