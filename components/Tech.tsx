@@ -18,10 +18,10 @@ const Tech = () => {
   const techList: TechList[] = [
     { name: "vue", icon: faVuejs },
     { name: "react", icon: faReact },
-    { name: "npm", icon: faNpm },
-    { name: "html", icon: faHtml5 },
-    { name: "css", icon: faCss3Alt },
-    { name: "js", icon: faJsSquare },
+    // { name: "npm", icon: faNpm },
+    // { name: "html", icon: faHtml5 },
+    // { name: "css", icon: faCss3Alt },
+    // { name: "javascript", icon: faJsSquare },
   ];
   return (
     <div className="m-5 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
