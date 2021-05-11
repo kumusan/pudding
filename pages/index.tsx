@@ -7,11 +7,11 @@ import Favorite from "../components/Favorite";
 const IndexPage = () => (
   <Layout title="KUMUSAN - BLOG">
     <div className="flex flex-row-reverse m-12">
-      <p className="text-6xl">Learn</p>
+      <p className="text-5xl dark:text-white">Learn</p>
     </div>
     <Tech />
     <div className="flex flex-row-reverse m-12">
-      <p className="text-6xl">Favorite</p>
+      <p className="text-5xl dark:text-white">Favorite</p>
     </div>
     <Favorite />
     <p>

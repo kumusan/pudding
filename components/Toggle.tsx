@@ -42,7 +42,7 @@ const Toggle = () => {
         checked={darkMode}
         onChange={ChangeDarkMode}
       />
-      <div className="block bg-gray-600 w-14 h-8 rounded-full"></div>
+      <div className="block bg-whitemode w-14 h-8 rounded-full dark:bg-gray-600"></div>
       <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
       <style>{`
         input:checked ~ .dot {
