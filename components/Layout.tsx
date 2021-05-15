@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import DarkModeToggle from "./DarkModeToggle";
+import Card from "./Card";
 
 type Props = {
   children?: ReactNode;
@@ -13,6 +14,10 @@ const Layout = ({ children, title }: Props) => (
       <title>{title}</title>
       <meta charSet="utf-8" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
+      ></link>
     </Head>
     <header className="flex flex-col m-10 dark:text-white">
       <h1 className="text-7xl">kumusan</h1>
@@ -21,8 +26,9 @@ const Layout = ({ children, title }: Props) => (
     </header>
     <hr className="text-black" />
     {children}
-    <footer className="dark:text-white">
-      <span>I'm here to stay (Footer)</span>
+    <footer className="flex justify-center dark:text-white">
+      <Card name="GitHub" icon="github" detect="icon" />
+      <Card name="Twitter" icon="twitter" detect="icon" />
     </footer>
   </div>
 );
