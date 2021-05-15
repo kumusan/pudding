@@ -1,7 +1,6 @@
 import React, { ReactNode } from "react";
 import Head from "next/head";
 import DarkModeToggle from "./DarkModeToggle";
-import Card from "./Card";
 
 type Props = {
   children?: ReactNode;
@@ -26,10 +25,6 @@ const Layout = ({ children, title }: Props) => (
     </header>
     <hr className="text-black" />
     {children}
-    <footer className="flex justify-center dark:text-white">
-      <Card name="GitHub" icon="github" detect="icon" />
-      <Card name="Twitter" icon="twitter" detect="icon" />
-    </footer>
   </div>
 );
 
