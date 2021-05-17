@@ -16,7 +16,7 @@ const AccountList: Icon[] = [
   },
   {
     name: "Hatena",
-    img: "",
+    img: "hatena.png",
     link: "https://grekumu.hatenablog.jp/",
     detect: "img",
   },
