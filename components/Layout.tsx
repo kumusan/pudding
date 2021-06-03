@@ -23,6 +23,7 @@ const Layout = ({ children, title }: Props) => (
       <p className="text-1xl pl-10">Front-End Engineer</p>
       <DarkModeToggle />
     </header>
+    {/* 色 */}
     <hr className="text-black" />
     {children}
   </div>
