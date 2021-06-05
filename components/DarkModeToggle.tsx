@@ -35,7 +35,7 @@ const DarkModeToggle = () => {
     }
   };
   return (
-    <div className="grid justify-items-stretch">
+    <div className="grid justify-items-stretch flex-none">
       <div className="cursor-pointer justify-self-end" onClick={ChangeDarkMode}>
         {darkMode ? (
           <FontAwesomeIcon icon={faMoon} className="w-14 h-8" />
@@ -48,12 +48,3 @@ const DarkModeToggle = () => {
 };
 
 export default DarkModeToggle;
-
-//     <div className="block bg-whitemode w-14 h-8 rounded-full dark:bg-gray-600"></div>
-//     <div className="dot absolute left-1 top-1 bg-white w-6 h-6 rounded-full transition"></div>
-//     <style>{`
-//   input:checked ~ .dot {
-//     transform: translateX(100%);
-//     background-color: #48bb78;
-//   }
-// `}</style>
