@@ -6,7 +6,6 @@ const Blog = () => {
   return (
     <Layout title="KUMUSAN - BLOG">
       <TestPage />
-      <p className="dark:text-white">test</p>
     </Layout>
   );
 };
