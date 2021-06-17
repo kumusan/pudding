@@ -4,20 +4,20 @@ import FavList from "../interfaces/card";
 const Favorite = () => {
   const favList: FavList[] = [
     {
-      name: "beel",
-      img: "beel.png",
+      name: "beer",
+      img: "beer.jpg",
       link:
         "https://www.amazon.co.jp/dp/B001TP8N6I/ref=cm_sw_r_tw_dp_SN7KVTJJZZHDR1PDVB30",
     },
     {
       name: "monster",
-      img: "monster.png",
+      img: "monster.jpg",
       link:
         "https://www.amazon.co.jp/dp/B007V6MQJY/ref=cm_sw_r_tw_dp_ZX6NA21TYVWXTAG656ES",
     },
     {
       name: "peace",
-      img: "peace.png",
+      img: "peace.jpg",
       link: "https://www.tabako-sakuranbo.co.jp/goods/goods-1264.php",
     },
   ];
