@@ -15,11 +15,12 @@ const Layout = ({ children, title }: Props) => (
       <meta charSet="utf-8" />
       <html lang="ja" />
       <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      <meta name="description" content="Front-End Engineer" />
+      <meta name="description" content="KUMUSAN Front-End Engineer" />
       <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.11.0/devicon.min.css"
       />
+       <link rel="icon" href="/favicon.ico" />
     </Head>
     <header className="flex flex-col m-10 dark:text-white mb-3">
       <h1 className="text-7xl">kumusan</h1>

@@ -18,12 +18,13 @@ const Tech = () => {
   ];
   return (
     <div className="m-5 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
-      {techList.map((tech) => (
+      {techList.map((tech, index) => (
         <Card
           name={tech.name}
           icon={tech.icon}
           link={tech.link}
           detect={"icon"}
+          key={index}
         />
       ))}
     </div>

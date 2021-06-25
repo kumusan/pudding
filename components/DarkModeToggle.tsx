@@ -3,7 +3,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSun, faMoon } from "@fortawesome/free-regular-svg-icons";
 
 const DarkModeToggle = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
+
+    useEffect(() => {
+        if (!("theme" in localStorage)) {
+            localStorage.theme = "light";
+        }
+    }, []);
+
 
   useEffect(() => {
     if (
@@ -11,11 +18,9 @@ const DarkModeToggle = () => {
       (!("theme" in localStorage) &&
         window.matchMedia("(prefers-color-scheme: dark)").matches)
     ) {
-      setDarkMode(true);
       document.querySelector("html")?.classList.add("dark");
       document.querySelector("body")!.style.backgroundColor = "#374151";
     } else {
-      setDarkMode(false);
       document.querySelector("html")?.classList.remove("dark");
       document.querySelector("body")!.style.backgroundColor = "#FFF0E8";
     }
