@@ -25,13 +25,14 @@ const AccountList: Icon[] = [
 const Account = () => {
   return (
     <div className="m-5 grid sm:grid-cols-2 md:grid-cols-3">
-      {AccountList.map((account) => {
+      {AccountList.map((account, index) => {
         return account.detect === "icon" ? (
           <Card
             name={account.name}
             icon={account.icon}
             link={account.link}
             detect={account.detect}
+            key={index}
           />
         ) : (
           <Card
@@ -39,6 +40,7 @@ const Account = () => {
             img={account.img}
             link={account.link}
             detect={account.detect}
+            key={index}
           />
         );
       })}

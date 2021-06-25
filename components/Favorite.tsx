@@ -23,8 +23,8 @@ const Favorite = () => {
   ];
   return (
     <div className="m-5 grid sm:grid-cols-2 md:grid-cols-3">
-      {favList.map((fav) => (
-        <Card name={fav.name} img={fav.img} link={fav.link} detect={"img"} />
+      {favList.map((fav, index) => (
+        <Card name={fav.name} img={fav.img} link={fav.link} detect={"img"} key={index}/>
       ))}
     </div>
   );
